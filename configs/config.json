@@ -1,0 +1,20 @@
+{
+  "routing": {
+    "task_preferences": {
+      "coding": ["deepseek", "openai", "local", "perplexity"],
+      "research": ["perplexity", "openai", "deepseek", "local"],
+      "general": ["local", "openai", "deepseek", "perplexity"]
+    },
+    "preference_weight": 0.6,
+    "performance_weight": 0.4
+  },
+  "scoring": {
+    "success_weight": 0.7,
+    "latency_weight": 0.3,
+    "cooldown_after_consecutive_failures": 3,
+    "cooldown_seconds": 60
+  },
+  "failover": {
+    "max_attempts": 3
+  }
+}
